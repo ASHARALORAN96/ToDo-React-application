@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import NavBar from "./navbar";
 import AddMember from "./addFamilyMember";
+import styles from './App.module.css'
 class App extends Component {
   state = {
     listInfo: [
@@ -31,13 +32,12 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1>family's Member {this.state.name}</h1>
+        <h1 className={styles.header}>family's Member {this.state.name} </h1>
+        <AddMember handleAddFamilyMember={this.handleAddFamilyMember} />
         <NavBar
           handleDeleteMember={this.handleDeleteMember}
           listInfo={this.state.listInfo}
         />
-        <AddMember handleAddFamilyMember={this.handleAddFamilyMember} />
-        <div className="shopping-list"></div>
       </>
     );
   }

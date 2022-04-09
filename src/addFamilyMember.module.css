@@ -1,0 +1,7 @@
+.addForm {
+    border :1px solid var(--container-border-color);
+    padding: 2%;
+    width: 80%;
+    margin: 2% auto;
+    background-color: var(--container-bg-color);
+}

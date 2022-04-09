@@ -1,0 +1,14 @@
+:root {
+    --container-bg-color : rgb(229, 205, 160);
+    --main-bg-color : rgb(247, 242, 242);
+    --container-border-color : gray;
+}
+body{
+    background-color: var(--main-bg-color);
+}
+.header{
+    width: 40%;
+    color: var(--container-border-color);
+    margin: auto;
+    text-align: center;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import styles from './addFamilyMember.module.css'
 class AddMember extends Component {
   state = {
     name: null,
@@ -20,8 +20,10 @@ class AddMember extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className={styles.addForm}>
+      <label htmlFor="name">member name: </label>
         <input type="text" id="name" onChange={this.handleChange} />
+        <label htmlFor="number">membe age :</label>
         <input type="number" id="age" onChange={this.handleChange} />
         <button>Submit</button>
       </form>
